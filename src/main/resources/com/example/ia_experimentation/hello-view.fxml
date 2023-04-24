@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="517.0" prefWidth="777.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ia_experimentation.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <AnchorPane prefHeight="476.0" prefWidth="737.0">
+         <children>
+            <ImageView fx:id="cam_frame" fitHeight="180.0" fitWidth="330.0" layoutX="32.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Downloads/there-is-no-connected-camera-mac.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="40.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Live View" wrappingWidth="77.8857421875">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="235.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date_Time">
+               <font>
+                  <Font name="New Peninim MT" size="13.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="32.0" layoutX="32.0" layoutY="222.0" stroke="BLACK" strokeType="INSIDE" width="143.0" />
+            <Text layoutX="51.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature (C)" wrappingWidth="105.84814453125" />
+            <ProgressBar layoutX="32.0" layoutY="406.0" prefWidth="200.0" progress="0.83" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="32.0" layoutX="32.0" layoutY="264.0" stroke="BLACK" strokeType="INSIDE" width="143.0" />
+            <Text layoutX="51.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lighjting Strenght" wrappingWidth="105.84814453125" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="32.0" layoutX="32.0" layoutY="309.0" stroke="BLACK" strokeType="INSIDE" width="143.0" />
+            <Text layoutX="51.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feeding Cycles" textAlignment="CENTER" wrappingWidth="105.84814453125" />
+            <TextField layoutX="32.0" layoutY="352.0" prefHeight="26.0" prefWidth="193.0" promptText="Input TIime  Frame:" text="Time Frame: D|H|M" />
+            <ToggleButtonGroup layoutX="335.0" layoutY="268.0" selectionType="SINGLE" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
